@@ -41,6 +41,7 @@ struct ContentView: View {
                             }
                     }
                     .fullScreenCover(isPresented: $showModal, content: {
+                        FullImageView(selectedImage: selectedImage)
                     })
                 })
             }
