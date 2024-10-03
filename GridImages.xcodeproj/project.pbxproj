@@ -38,6 +38,8 @@
 /* Begin PBXFileReference section */
 		565BDF00DCFF851C9B5C6F27 /* Pods-GridImages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GridImages.release.xcconfig"; path = "Target Support Files/Pods-GridImages/Pods-GridImages.release.xcconfig"; sourceTree = "<group>"; };
 		61D06AFD342CAF05A5D39824 /* Pods-GridImages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GridImages.debug.xcconfig"; path = "Target Support Files/Pods-GridImages/Pods-GridImages.debug.xcconfig"; sourceTree = "<group>"; };
+		681C0D732CAF3127009FD5DE /* GridImagesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = GridImagesTests.xctest; path = "/Users/5craft/Grid-SwiftUI/build/Debug-iphoneos/GridImagesTests.xctest"; sourceTree = "<absolute>"; };
+		681C0D742CAF3127009FD5DE /* GridImagesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = GridImagesUITests.xctest; path = "/Users/5craft/Grid-SwiftUI/build/Debug-iphoneos/GridImagesUITests.xctest"; sourceTree = "<absolute>"; };
 		68566EE72CA032C000B95ABC /* GridImagesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridImagesApp.swift; sourceTree = "<group>"; };
 		68566EE92CA032C000B95ABC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		68566EEB2CA032C200B95ABC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,8 +49,6 @@
 		68A7F3702CAD0D030013B77E /* ApplicationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationManager.swift; sourceTree = "<group>"; };
 		68A7F3732CAD11930013B77E /* GridImages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GridImages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68A7F3762CADBA5C0013B77E /* FullImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImageView.swift; sourceTree = "<group>"; };
-		68BB2A102CAEC61900CA37FB /* GridImagesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = GridImagesTests.xctest; path = "/Users/5craft/Desktop/GridImages/build/Debug-iphoneos/GridImagesTests.xctest"; sourceTree = "<absolute>"; };
-		68BB2A112CAEC61900CA37FB /* GridImagesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = GridImagesUITests.xctest; path = "/Users/5craft/Desktop/GridImages/build/Debug-iphoneos/GridImagesUITests.xctest"; sourceTree = "<absolute>"; };
 		A1EC0EF0D069732F296B0B85 /* libPods-GridImages.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GridImages.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -189,7 +189,7 @@
 			);
 			name = GridImagesTests;
 			productName = GridImagesTests;
-			productReference = 68BB2A102CAEC61900CA37FB /* GridImagesTests.xctest */;
+			productReference = 681C0D732CAF3127009FD5DE /* GridImagesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		68566EFD2CA032C200B95ABC /* GridImagesUITests */ = {
@@ -207,7 +207,7 @@
 			);
 			name = GridImagesUITests;
 			productName = GridImagesUITests;
-			productReference = 68BB2A112CAEC61900CA37FB /* GridImagesUITests.xctest */;
+			productReference = 681C0D742CAF3127009FD5DE /* GridImagesUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
