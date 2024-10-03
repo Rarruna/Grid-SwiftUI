@@ -2,10 +2,18 @@ import SwiftUI
 import Kingfisher
 
 struct ContentView: View {
+    @ObservedObject private var viewModel: GridViewModel
     @State private var selectedImage: URL?
     @State private var showModal = false
         
-    private var images: [String]()
+    private var images: [URL] {
+        viewModel.images
+    }
+    
+    init(viewModel: GridViewModel) {
+        self.viewModel = viewModel
+    }
+        
     var coloumnGrid: [GridItem] {
         [GridItem(.adaptive(minimum: 125))]
     }
@@ -36,6 +44,7 @@ struct ContentView: View {
                     })
                 })
             }
+            .onAppear(perform: viewModel.fetchImages)
             .navigationTitle("Grid images")
         }
     }

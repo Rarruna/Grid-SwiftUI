@@ -9,7 +9,7 @@ struct GridImagesApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: appManager.viewModel)
         }
     }
 }
