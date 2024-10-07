@@ -18,26 +18,7 @@
 		68A7F3772CADBA5C0013B77E /* FullImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A7F3762CADBA5C0013B77E /* FullImageView.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		68566EF52CA032C200B95ABC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 68566EDC2CA032C000B95ABC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 68566EE32CA032C000B95ABC;
-			remoteInfo = GridImages;
-		};
-		68566EFF2CA032C200B95ABC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 68566EDC2CA032C000B95ABC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 68566EE32CA032C000B95ABC;
-			remoteInfo = GridImages;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		681C0D732CAF3127009FD5DE /* GridImagesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = GridImagesTests.xctest; path = "/Users/5craft/Grid-SwiftUI/build/Debug-iphoneos/GridImagesTests.xctest"; sourceTree = "<absolute>"; };
-		681C0D742CAF3127009FD5DE /* GridImagesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = GridImagesUITests.xctest; path = "/Users/5craft/Grid-SwiftUI/build/Debug-iphoneos/GridImagesUITests.xctest"; sourceTree = "<absolute>"; };
 		68566EE72CA032C000B95ABC /* GridImagesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridImagesApp.swift; sourceTree = "<group>"; };
 		68566EE92CA032C000B95ABC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		68566EEB2CA032C200B95ABC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -153,42 +134,6 @@
 			productReference = 68A7F3732CAD11930013B77E /* GridImages.app */;
 			productType = "com.apple.product-type.application";
 		};
-		68566EF32CA032C200B95ABC /* GridImagesTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 68566F0B2CA032C200B95ABC /* Build configuration list for PBXNativeTarget "GridImagesTests" */;
-			buildPhases = (
-				68566EF02CA032C200B95ABC /* Sources */,
-				68566EF12CA032C200B95ABC /* Frameworks */,
-				68566EF22CA032C200B95ABC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				68566EF62CA032C200B95ABC /* PBXTargetDependency */,
-			);
-			name = GridImagesTests;
-			productName = GridImagesTests;
-			productReference = 681C0D732CAF3127009FD5DE /* GridImagesTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		68566EFD2CA032C200B95ABC /* GridImagesUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 68566F0E2CA032C200B95ABC /* Build configuration list for PBXNativeTarget "GridImagesUITests" */;
-			buildPhases = (
-				68566EFA2CA032C200B95ABC /* Sources */,
-				68566EFB2CA032C200B95ABC /* Frameworks */,
-				68566EFC2CA032C200B95ABC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				68566F002CA032C200B95ABC /* PBXTargetDependency */,
-			);
-			name = GridImagesUITests;
-			productName = GridImagesUITests;
-			productReference = 681C0D742CAF3127009FD5DE /* GridImagesUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -201,14 +146,6 @@
 				TargetAttributes = {
 					68566EE32CA032C000B95ABC = {
 						CreatedOnToolsVersion = 15.2;
-					};
-					68566EF32CA032C200B95ABC = {
-						CreatedOnToolsVersion = 15.2;
-						TestTargetID = 68566EE32CA032C000B95ABC;
-					};
-					68566EFD2CA032C200B95ABC = {
-						CreatedOnToolsVersion = 15.2;
-						TestTargetID = 68566EE32CA032C000B95ABC;
 					};
 				};
 			};
@@ -229,8 +166,6 @@
 			projectRoot = "";
 			targets = (
 				68566EE32CA032C000B95ABC /* GridImages */,
-				68566EF32CA032C200B95ABC /* GridImagesTests */,
-				68566EFD2CA032C200B95ABC /* GridImagesUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -242,20 +177,6 @@
 			files = (
 				68566EEF2CA032C200B95ABC /* Preview Assets.xcassets in Resources */,
 				68566EEC2CA032C200B95ABC /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		68566EF22CA032C200B95ABC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		68566EFC2CA032C200B95ABC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,34 +196,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		68566EF02CA032C200B95ABC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		68566EFA2CA032C200B95ABC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		68566EF62CA032C200B95ABC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 68566EE32CA032C000B95ABC /* GridImages */;
-			targetProxy = 68566EF52CA032C200B95ABC /* PBXContainerItemProxy */;
-		};
-		68566F002CA032C200B95ABC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 68566EE32CA032C000B95ABC /* GridImages */;
-			targetProxy = 68566EFF2CA032C200B95ABC /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		68566F062CA032C200B95ABC /* Debug */ = {
@@ -482,82 +376,6 @@
 			};
 			name = Release;
 		};
-		68566F0C2CA032C200B95ABC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HV42WC9YAP;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = rrsrk.GridImagesTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GridImages.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GridImages";
-			};
-			name = Debug;
-		};
-		68566F0D2CA032C200B95ABC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HV42WC9YAP;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = rrsrk.GridImagesTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GridImages.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GridImages";
-			};
-			name = Release;
-		};
-		68566F0F2CA032C200B95ABC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HV42WC9YAP;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = rrsrk.GridImagesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = GridImages;
-			};
-			name = Debug;
-		};
-		68566F102CA032C200B95ABC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HV42WC9YAP;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = rrsrk.GridImagesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = GridImages;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -575,24 +393,6 @@
 			buildConfigurations = (
 				68566F092CA032C200B95ABC /* Debug */,
 				68566F0A2CA032C200B95ABC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		68566F0B2CA032C200B95ABC /* Build configuration list for PBXNativeTarget "GridImagesTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				68566F0C2CA032C200B95ABC /* Debug */,
-				68566F0D2CA032C200B95ABC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		68566F0E2CA032C200B95ABC /* Build configuration list for PBXNativeTarget "GridImagesUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				68566F0F2CA032C200B95ABC /* Debug */,
-				68566F102CA032C200B95ABC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
