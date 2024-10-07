@@ -6,16 +6,14 @@ class GridViewModel: ObservableObject {
     private let networkManager: NetworkManager
     private let userDefaults: UserDefaults
     
-    @Published var images = [URL]()
+    @Published var imageLinks = [URL]()
 
     init(networkManager: NetworkManager) {
         self.networkManager = networkManager
         self.userDefaults = .standard
     }
     
-    func fetchImages() {
-        networkManager.fetchImages { [weak self] in
-            self?.images = $0
-        }
+    func fetchImages() async {
+        imageLinks = await networkManager.fetchImages()
     }
 }

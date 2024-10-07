@@ -6,8 +6,8 @@ struct ContentView: View {
     @State private var selectedImage: URL?
     @State private var showModal = false
         
-    private var images: [URL] {
-        viewModel.images
+    private var imageLinks: [URL] {
+        viewModel.imageLinks
     }
     
     init(viewModel: GridViewModel) {
@@ -22,13 +22,13 @@ struct ContentView: View {
         NavigationView {
             ScrollView(.vertical) {
                 LazyVGrid(columns: coloumnGrid, alignment: .center, spacing: 1, content: {
-                    ForEach(images.indices, id: \.self) { index in
+                    ForEach(imageLinks.indices, id: \.self) { index in
                         KFImage(url(at: index))
-                            .placeholder({
+                            .placeholder {
                                 Color.gray.opacity(0.1)
                                 Image(systemName: "photo")
                                     .foregroundColor(.gray)
-                            })
+                            }
                             .waitForCache()
                             .resizable()
                             .scaledToFill()
@@ -36,7 +36,7 @@ struct ContentView: View {
                                    height: 125)
                             .clipped()
                             .onTapGesture {
-                                selectedImage = images[index]
+                                selectedImage = imageLinks[index]
                                 showModal = true
                             }
                     }
@@ -45,13 +45,19 @@ struct ContentView: View {
                     })
                 })
             }
-            .onAppear(perform: viewModel.fetchImages)
+            .onAppear(perform: { fetchImages() })
             .navigationTitle("Grid images")
         }
     }
     
     private func url(at index: Int) -> URL? {
-        images[index]
+        imageLinks[index]
+    }
+    
+    private func fetchImages() {
+        Task {
+            await viewModel.fetchImages()
+        }
     }
 }
 

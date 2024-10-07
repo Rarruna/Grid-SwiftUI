@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		134F3BC02FD97003CC008C0E /* libPods-GridImages.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1EC0EF0D069732F296B0B85 /* libPods-GridImages.a */; };
+		684EE0FD2CB3F33500B79B7C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 684EE0FC2CB3F33500B79B7C /* Kingfisher */; };
 		68566EE82CA032C000B95ABC /* GridImagesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68566EE72CA032C000B95ABC /* GridImagesApp.swift */; };
 		68566EEA2CA032C000B95ABC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68566EE92CA032C000B95ABC /* ContentView.swift */; };
 		68566EEC2CA032C200B95ABC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68566EEB2CA032C200B95ABC /* Assets.xcassets */; };
@@ -36,8 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		565BDF00DCFF851C9B5C6F27 /* Pods-GridImages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GridImages.release.xcconfig"; path = "Target Support Files/Pods-GridImages/Pods-GridImages.release.xcconfig"; sourceTree = "<group>"; };
-		61D06AFD342CAF05A5D39824 /* Pods-GridImages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GridImages.debug.xcconfig"; path = "Target Support Files/Pods-GridImages/Pods-GridImages.debug.xcconfig"; sourceTree = "<group>"; };
 		681C0D732CAF3127009FD5DE /* GridImagesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = GridImagesTests.xctest; path = "/Users/5craft/Grid-SwiftUI/build/Debug-iphoneos/GridImagesTests.xctest"; sourceTree = "<absolute>"; };
 		681C0D742CAF3127009FD5DE /* GridImagesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = GridImagesUITests.xctest; path = "/Users/5craft/Grid-SwiftUI/build/Debug-iphoneos/GridImagesUITests.xctest"; sourceTree = "<absolute>"; };
 		68566EE72CA032C000B95ABC /* GridImagesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridImagesApp.swift; sourceTree = "<group>"; };
@@ -49,7 +47,6 @@
 		68A7F3702CAD0D030013B77E /* ApplicationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationManager.swift; sourceTree = "<group>"; };
 		68A7F3732CAD11930013B77E /* GridImages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GridImages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68A7F3762CADBA5C0013B77E /* FullImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImageView.swift; sourceTree = "<group>"; };
-		A1EC0EF0D069732F296B0B85 /* libPods-GridImages.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GridImages.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				134F3BC02FD97003CC008C0E /* libPods-GridImages.a in Frameworks */,
+				684EE0FD2CB3F33500B79B7C /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,22 +75,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3D2A9E708F6D65A0FE2461FF /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				61D06AFD342CAF05A5D39824 /* Pods-GridImages.debug.xcconfig */,
-				565BDF00DCFF851C9B5C6F27 /* Pods-GridImages.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		68566EDB2CA032C000B95ABC = {
 			isa = PBXGroup;
 			children = (
 				68A7F3722CAD0FC80013B77E /* Managers */,
 				68566EE62CA032C000B95ABC /* GridImages */,
-				3D2A9E708F6D65A0FE2461FF /* Pods */,
-				D9778D96E5E8B482AC01B440 /* Frameworks */,
 				68A7F3732CAD11930013B77E /* GridImages.app */,
 			);
 			sourceTree = "<group>";
@@ -144,14 +130,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		D9778D96E5E8B482AC01B440 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A1EC0EF0D069732F296B0B85 /* libPods-GridImages.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,17 +137,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68566F082CA032C200B95ABC /* Build configuration list for PBXNativeTarget "GridImages" */;
 			buildPhases = (
-				902E03FC8C3AEF49605EEF76 /* [CP] Check Pods Manifest.lock */,
 				68566EE02CA032C000B95ABC /* Sources */,
 				68566EE12CA032C000B95ABC /* Frameworks */,
 				68566EE22CA032C000B95ABC /* Resources */,
-				BEEF0FE00ACF2CDF12C205EA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = GridImages;
+			packageProductDependencies = (
+				684EE0FC2CB3F33500B79B7C /* Kingfisher */,
+			);
 			productName = GridImages;
 			productReference = 68A7F3732CAD11930013B77E /* GridImages.app */;
 			productType = "com.apple.product-type.application";
@@ -242,6 +221,9 @@
 				Base,
 			);
 			mainGroup = 68566EDB2CA032C000B95ABC;
+			packageReferences = (
+				684EE0FB2CB3F33500B79B7C /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 68566EDB2CA032C000B95ABC;
 			projectDirPath = "";
 			projectRoot = "";
@@ -278,48 +260,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		902E03FC8C3AEF49605EEF76 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GridImages-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BEEF0FE00ACF2CDF12C205EA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GridImages/Pods-GridImages-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GridImages/Pods-GridImages-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GridImages/Pods-GridImages-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		68566EE02CA032C000B95ABC /* Sources */ = {
@@ -486,7 +426,6 @@
 		};
 		68566F092CA032C200B95ABC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61D06AFD342CAF05A5D39824 /* Pods-GridImages.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -516,7 +455,6 @@
 		};
 		68566F0A2CA032C200B95ABC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 565BDF00DCFF851C9B5C6F27 /* Pods-GridImages.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -660,6 +598,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		684EE0FB2CB3F33500B79B7C /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		684EE0FC2CB3F33500B79B7C /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 684EE0FB2CB3F33500B79B7C /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 68566EDC2CA032C000B95ABC /* Project object */;
 }

@@ -1,6 +1,7 @@
 import SwiftUI
 import Kingfisher
 
+@MainActor
 struct FullImageView: View {
     @State var selectedImage: URL?
     @State private var scale: CGFloat = 1.0
